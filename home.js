@@ -23,14 +23,14 @@ function startGame(game){
 $( document ).ready(function() {
     
     $('#wormModal').on('show.bs.modal', function (e) {
-        $('#wormModal').addClass(' animate__flipInX');
-        $('#wormModal').removeClass('animate__flipOutX');
+        $('#wormModal').addClass(' animate__zoomIn');
+        $('#wormModal').removeClass('animate__zoomOut');
        })
        $('#wormModal').on('hidden.bs.modal', function (e) {
         unityInstance2.Quit();
         $('#wormModal').show();
-        $('#wormModal').addClass('animate__flipOutX');
-        $('#wormModal').removeClass(' animate__flipInX');
+        $('#wormModal').addClass('animate__zoomOut');
+        $('#wormModal').removeClass(' animate__zoomIn');
         $('#wormholeContainer').removeClass('shown');
         $('#wormholeContainer').addClass('hidden');
         $('.playButton').removeClass('hidden');
@@ -38,14 +38,14 @@ $( document ).ready(function() {
        })
        
        $('#giraffeModal').on('show.bs.modal', function (e) {
-        $('#giraffeModal').addClass(' animate__flipInX');
-        $('#giraffeModal').removeClass('animate__flipOutX');
+        $('#giraffeModal').addClass(' animate__zoomIn');
+        $('#giraffeModal').removeClass('animate__zoomOut');
        })
        $('#giraffeModal').on('hidden.bs.modal', function (e) {
         unityInstance.Quit();
         $('#giraffeModal').show();
-        $('#giraffeModal').addClass('animate__flipOutX');
-        $('#wormMgiraffeModalodal').removeClass(' animate__flipInX');
+        $('#giraffeModal').addClass('animate__zoomOut');
+        $('#wormMgiraffeModalodal').removeClass('animate__zoomIn');
         
         $('#giraffeContainer').removeClass('shown');
         $('#giraffeContainer').addClass('hidden');

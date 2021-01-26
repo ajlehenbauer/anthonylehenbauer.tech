@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/main.css">
+        <script>
+        function hideOne() {
+            var x = document.getElementById("hideOne");
+            if (x.className === "hidden") {
+              x.className= "shown";
+            } else {
+              x.className = "hidden";
+            }
+          }
+          </script>
+      </head>
+
+      <button onclick="hideOne()">Click Me</button>
+
+        <div id="hideOne" class = "hidden">
+        This is my DIV element.
+        </div>
+        
+      
+    
+</html>

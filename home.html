@@ -73,11 +73,10 @@
         </div>
         
        
-    </div>
-    <div class="row top-buffer">
+    
         <div class="bg-image hover-zoom hover-overlay col-md-2 col-sm-4 col-4 offset-1" data-mdb-ripple-color="light">
-            <img src="images/wormhole.png" class="project img-fluid" />
-            <a href = "#" onclick="startGame('giraffe')" data-bs-toggle="modal" data-bs-target="#giraffeModal">
+            <img src="images/giraffe.png" class="project img-fluid" />
+            <a href = "#" data-bs-toggle="modal" data-bs-target="#giraffeModal">
                 <div class="mask" style="background-color:#fac3c37e"></div>
             </a>
             
@@ -129,13 +128,31 @@
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h1>Giraffe Game</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <div class="webgl-content">
-                <div id="giraffeContainer" style="width: 500; height: 350"></div>
-              </div>
+            <div class = row>
+                <div class="webgl-content col-md-8">
+                    
+                    <div class = game-container>
+                        <div id="giraffeContainer" class ="game hidden"></div>
+                        <button class = "playButton" onclick="startGame('giraffe')">Play</button>
+                        
+                    </div>
+                    
+                  </div>
+                <div class = col-md-4>
+                    <p>
+                        I made this as part of a team for Global Game Jam 2020. For the timeframe, we did an amazing job with the scope and ended up with a pretty complete and enjoyable
+                        arcade platformer.
+                    </p>
+                    <p>
+                        It's a great game with a controller and I don't recommend playing without one but, if you want to try it don't have a controller around, keyboard controls are E:start SPACE:jump X:catch C:throw Z:fix
+                    </p>
+                </div>
+            </div>
+            
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -145,6 +162,7 @@
     </div>
   </div>
 </body>
+
 
 
 </html>

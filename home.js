@@ -4,7 +4,10 @@ var unityInstance2;
 function startGame(game){
        
     if(game == "giraffe"){
-        
+        $('#giraffeContainer').removeClass('hidden');
+        $('#giraffeContainer').addClass('shown');
+        $('.playButton').addClass('hidden');
+        $('.playButton').removeClass('shown');
         unityInstance = UnityLoader.instantiate("giraffeContainer", "GiraffeBuild/UGGWebBuild.json", {onProgress: UnityProgress});
     }
     else if(game =="worm"){
@@ -44,6 +47,8 @@ $( document ).ready(function() {
         $('#giraffeModal').addClass('animate__flipOutX');
         $('#wormMgiraffeModalodal').removeClass(' animate__flipInX');
         
+        $('#giraffeContainer').removeClass('shown');
+        $('#giraffeContainer').addClass('hidden');
         $('.playButton').removeClass('hidden');
         $('.playButton').addClass('shown');
        })

@@ -48,56 +48,98 @@
 
 <body>
 
-    <div class="row top-buffer">
-        <div class="col-md-11 offset-1">
-            <h1 class="animate__animated animate__bounce">Anthony Lehenbauer</h1>
+    <div class="row">
+        <div class="col-md-11 offset-md-1 col-10 offset-1">
+            <h1 class="animate__animated animate__bounce bottom-buffer-large" id="title">Anthony Lehenbauer</h1>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-10 offset-1">
-            <p>This is like what I'm about</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-10 offset-1">
-            <h2>These are some of the things I've been working on...</h2>
+        <div class="col-md-8 offset-md-2 col-10 offset-1">
+            <p>
+                I am currently a freelance/independent developer making mostly games and websites. I'd love to help you with either! Explore some of my work
+                and have an excuse to play a game or two.
+            </p>
         </div>
     </div>
     <div class="row top-buffer">
-        <div class="bg-image hover-zoom hover-overlay col-md-2 col-sm-4 col-4 offset-2" data-mdb-ripple-color="light">
-            <img src="images/wormhole.png" class="project img-fluid" />
+        <div class="col-md-8 col-8 offset-2">
+            <h2>Here are some of the things I've been working on...</h2>
+        </div>
+    </div>
+
+    <div class = 'filter col-8 offset-2 top-buffer'>
+        <div class="form-check form-check-inline">
+            <input onclick ='setFilter()' class="check green" type="checkbox" id="unityCheck" value="filter1">
+            <label class="check-label" for="inlineCheckbox1">Unity</label>
+            
+          </div>
+          <div class="form-check form-check-inline">
+            <input onclick ='setFilter()' class="check green" type="checkbox" id="webCheck" value="filter2">
+            <label class="check-label" for="inlineCheckbox2">Web</label>
+          </div>
+          <!--
+          <div class="form-check form-check-inline">
+            <input onclick ='setFilter()' class="check" type="checkbox" id="interactiveCheck" value="filter3">
+            <label class="check-label" for="inlineCheckbox3">Interactive</label>
+          </div>
+        -->
+    </div>
+    
+   
+
+    <div class="row top-buffer">
+        <div class="bg-image hover-zoom col-md-2 col-sm-4 col-4 offset-2 project-container" tags="unity interactive" data-mdb-ripple-color="light">
+            
             <a href = "#"  data-bs-toggle="modal" data-bs-target="#wormModal">
-                <div class="mask" style="background-color:#fac3c37e"></div>
+                <img src="images/wormhole.png" class=" project img-fluid" />
             </a>
             
         </div>
         
        
     
-        <div class="bg-image hover-zoom hover-overlay col-md-2 col-sm-4 col-4 offset-1" data-mdb-ripple-color="light">
-            <img src="images/giraffe.png" class="project img-fluid" />
+        <div class="bg-image hover-zoom  col-md-2 col-sm-4 col-4 offset-md-1  offset-sm-1 project-container" tags="unity interactive" data-mdb-ripple-color="light">
+            
             <a href = "#" data-bs-toggle="modal" data-bs-target="#giraffeModal">
-                <div class="mask" style="background-color:#fac3c37e"></div>
+                <img src="images/giraffe.png" class="project img-fluid" />
             </a>
             
         </div>
-        <div class="bg-image hover-zoom hover-overlay col-md-2 col-sm-4 col-4 offset-1" data-mdb-ripple-color="light">
-            <img src="images/ca.png" class="project img-fluid" />
+        <div class="bg-image hover-zoom  col-md-2 col-sm-4 col-4 offset-md-1 offset-sm-2 offset-2 project-container" tags="unity interactive" data-mdb-ripple-color="light">
+            
+            
             <a href = "#" data-bs-toggle="modal" data-bs-target="#caModal">
-                <div class="mask" style="background-color:#fac3c37e"></div>
+                <img  src="images/ca.png" class="tag img-fluid" />
+            <img  src="images/ca.png" class="project img-fluid" />
             </a>
             
         </div>
-        
-       
+        <div class="bg-image hover-zoom  col-md-2 col-sm-4 col-4 offset-md-2 offset-sm-1 project-container"  tags="web interactive" data-mdb-ripple-color="light">
+            
+            <a href = "#" data-bs-toggle="modal" data-bs-target="#triviaModal">
+                <img src="images/trivia.png" class="project img-fluid" />
+            </a>
+            
+        </div>
+
+        <div class="bg-image hover-zoom col-md-2 col-sm-4 col-4 offset-md-1 offset-sm-2 offset-2 project-container" tags="web interactive"  data-mdb-ripple-color="light">
+            
+            <a href = "#" data-bs-toggle="modal" data-bs-target="#mildModal">
+                <img src="images/mild.png" class="project img-fluid" />
+            </a>
+            
+        </div>
     </div>
+    
+        
+    
   
   <!-- Wormhole Modal -->
   <div class="modal animate__animated animate__zoomIn" modal-fade-transform ="1.5s" id="wormModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1>Shields Up</h1>
+          <h2>Shields Up</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -132,7 +174,7 @@
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1>Giraffe Game</h1>
+          <h2>Giraffe Game</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -167,26 +209,67 @@
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1>Cross Analysis</h1>
+          <h2>Cross Analysis</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <div class = row>
-                <div class = 'col-md-8 offset-2'>
+                <div class = 'col-md-8 offset-md-2 col-10 offset-1'>
                     <p>
-                        My most recent project is a number puzzle game. Originally created as a prototype in Google Sheets, I am now developing in for mobile to expand on the core gameplay.
-                    </p>
-                    
+                        My most recent project is a number puzzle game. Originally created as a prototype in 
+                        <a href = "https://docs.google.com/spreadsheets/d/1BpHbQywxs1BAbKZsTsUPOkBOT9n5GB4zs95HldZAJOQ/edit?usp=sharing">Google Sheets</a>,
+                         I am now developing the game for mobile to expand on the core gameplay.
+                    </p> 
                 </div>
-            </div>
-            
+            </div>   
         </div>
-        
       </div>
     </div>
   </div>
-
-
+<!-- Trivia Modal -->
+<div class="modal animate__animated animate__zoomIn" modal-fade-transform ="1.5s" id="trivaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Cross Analysis</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class = row>
+                <div class = 'col-md-8 offset-md-2 col-10 offset-1'>
+                    <p>
+                        This is just a simple 
+                        <a href = "https://glacial-forest-61386.herokuapp.com/">Trivia Game</a>
+                        using Ruby on Rails and PostgreSQL. It's not a ton of fun
+                        but it shows that I can use a framework when I need to.
+                    </p> 
+                </div>
+            </div>   
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Mild Modal -->
+<div class="modal animate__animated animate__zoomIn" modal-fade-transform ="1.5s" id="mildModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Cross Analysis</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class = row>
+                <div class = 'col-md-8 offset-md-2 col-10 offset-1'>
+                    <p>
+                        <a href="http://mildinteraction.com">Mild Interaction</a> is a set of interactive comics I made using
+                        just some HTML, CSS, JQuery, and my poor drawing skills.
+                    </p> 
+                </div>
+            </div>   
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 

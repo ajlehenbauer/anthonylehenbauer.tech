@@ -1,3 +1,5 @@
+
+
 #pageTitle {
   color: #FFFFFF;
   font-size: 50px;
@@ -10,17 +12,23 @@
   display:block;
 }
 body {
-  margin-top: 150px;
-  background-color: #fac3c3;
+  align-self: center;
+  align-content: center;
+  
+  margin-top: 50px;
+  background-color: #76ffaf;
   overflow-x: hidden;
 }
-/* .card-body{
+/* 
+#fac3c3
+.card-body{
   background-color: #EEEEEE;
 
 } */
 #pageBody {
   min-height: 575px;
 }
+
 .modal{
   border-radius:0px;
 }
@@ -43,7 +51,7 @@ h1{
   font-size:45px;
   align-self: center;
   text-align: center;
-  color:#e2e2e2;
+  color:#ffffff;
 }
 h2{
   font-size:25px;
@@ -69,12 +77,29 @@ h2{
   border:0;
   
 }
-
-.project{
+.project-container{
+  position: relative;
+}
+.row{
+  
+  position: relative;
+}
+.tag{
+  position: absolute;
+  min-width: 80px;
   max-width: 150px;
+  margin-top:20;
+}
+.project{
+  
+  min-width: 80px;
+  max-width: 150px;
+  margin-top:20;
   height: auto;
 }
-
+.filter{
+  padding-left:0px;
+}
 
 .text {
   color: white;
@@ -88,16 +113,15 @@ h2{
   text-align: center;
 }
 
-navbar-header{
-  align-items: center;
-}
 th {
   background-color: #31444b;
   color: white;
 }
 
-
-.form-check-label{
+.check{
+  background:azure
+}
+.check-label{
   font-size: 14px;
 
 }
@@ -108,12 +132,19 @@ th {
 .top-buffer{
   margin-top: 20px;
 }
-
+.top-buffer-large{
+  margin-top: 50px;
+}
 .bottom-buffer-large{
   margin-bottom: 50px;
 }
 .bold{
   font-weight: bold;
+}
+
+.green{
+  background-color: aquamarine;
+  color:aquamarine;
 }
 
 

@@ -27,14 +27,19 @@ $( document ).ready(function() {
         $('#wormModal').removeClass('animate__zoomOut');
        })
        $('#wormModal').on('hidden.bs.modal', function (e) {
-        unityInstance2.Quit();
-        $('#wormModal').show();
+        if(unityInstance2!=null){
+            unityInstance2.Quit();
+        }
+        
+        $('#wormModal').show().delay(1000).hide();
         $('#wormModal').addClass('animate__zoomOut');
         $('#wormModal').removeClass(' animate__zoomIn');
         $('#wormholeContainer').removeClass('shown');
         $('#wormholeContainer').addClass('hidden');
         $('.playButton').removeClass('hidden');
         $('.playButton').addClass('shown');
+        
+        
        })
        
        $('#giraffeModal').on('show.bs.modal', function (e) {
@@ -42,15 +47,19 @@ $( document ).ready(function() {
         $('#giraffeModal').removeClass('animate__zoomOut');
        })
        $('#giraffeModal').on('hidden.bs.modal', function (e) {
-        unityInstance.Quit();
-        $('#giraffeModal').show();
+        
+        if(unityInstance!=null){
+            unityInstance.Quit();
+        }
+        $('#giraffeModal').show().delay(1000).hide();
         $('#giraffeModal').addClass('animate__zoomOut');
-        $('#wormMgiraffeModalodal').removeClass('animate__zoomIn');
+        $('#giraffeModal').removeClass('animate__zoomIn');
         
         $('#giraffeContainer').removeClass('shown');
         $('#giraffeContainer').addClass('hidden');
         $('.playButton').removeClass('hidden');
         $('.playButton').addClass('shown');
+        
        })
     
     

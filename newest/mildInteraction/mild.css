@@ -1,0 +1,19 @@
+.fly{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+}
+.fly-caught{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+}
+.jar{
+    position:absolute;
+    
+}
+.jar-img{
+    position:absolute;
+    width:80px;
+    height: 80;
+}

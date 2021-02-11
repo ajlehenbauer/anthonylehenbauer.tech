@@ -35,7 +35,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="TemplateData/style.css" />
 		<link rel="stylesheet" href="assets/css/home.css" />
-
+		<link rel="stylesheet" href="mildInteraction/mild.css" />
 
 	</head>
 	<body class="is-preload">
@@ -99,7 +99,7 @@
 								<p>Another arcade game, this time a platformer</p>
 							</li>
 							<li>
-								<a href = "#two" onclick = "openNav(3)" class="scrolly"><img  src="images/mild.png" class="tag img-fluid" /></a>
+								<a href = "#two" onclick = "openNav(3); createFlyDelay()" class="scrolly"><img  src="images/mild.png" class="tag img-fluid" /></a>
 								<h3>Mild Interaction</h3>
 								<p>A series of interactive webcomics</p>
 							</li>
@@ -163,8 +163,14 @@
 						</div>
 						<div class = "col-4 off-1">
 							<p>
-								The goal of the game is to do some things and some other stuff. I originally made this for 
-								Goole Sheets, but rebuilt it in Unity to expand on the core gameplay.
+								Cross Analysis is easy to pick up, but difficult to master.
+								Simply swap tiles so that each row and column has its highest number
+								in the center position and is in decreasing order further from the center.
+								<br>
+								Random boards provide good casual play, the challenges give a chance to 
+								truly test your puzzle solving skills.
+								I originally made this for Goole Sheets, but rebuilt it in Unity to expand on 
+								the core gameplay. The game is still in development, but this is a pretty good prototype!
 							</p>
 							
 						</div>
@@ -246,11 +252,7 @@
 			
                 <div class = "overlay-content">
 					<div class = row>
-						<div class = " col-6 off-3 game-container">
-							<div id="giraffeContainer" class ="game hidden"></div>
-							<button class = "playButton" >No Game Here</button>
-							
-						</div>
+						
 						
 							
 						</div>
@@ -387,6 +389,7 @@
 			<script src="assets/js/overlay.js"></script>
 			<script src="assets/js/home.js"></script>
 			<script src="CAWeb/CAScript.js"></script>
+			<script src="mildInteraction/scripts.js"></script>
 
 	</body>
 </html>

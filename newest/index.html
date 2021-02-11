@@ -1,0 +1,392 @@
+<!DOCTYPE HTML>
+<!--
+	Highlights by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Anthony Lehenbauer | Portfolio</title>
+		<meta charset="utf-8" />
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<!--UNITY-->
+    
+		<script src="TemplateData/UnityProgress.js"></script>
+    
+		<script src="WormholeBuild/UnityLoader.js"></script>
+		
+		<script>
+			UnityLoader.Error.handler = function(e, t)
+			{
+				console.log(e);
+			}
+		</script>
+		
+		
+		
+		
+		<!--animate.css-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		
+		
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="TemplateData/style.css" />
+		<link rel="stylesheet" href="assets/css/home.css" />
+
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header class="major">
+					<h1 class = "animate__bounceIn">Anthony Lehenbauer</h1>
+					<p>Let me introduce myself</p>
+				</header>
+				<div class="container">
+					<ul class="actions special">
+						<li><a href="#one" class="button primary scrolly">Begin</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main special">
+				<div class="container">
+					<!--span class="image fit primary"><img src="images/pic01.jpg" alt="" /></span-->
+					<div class="content">
+						<header class="major">
+							<h2>Who I am</h2>
+						</header>
+						<p>With a Digital Arts and Science Degree, my skills are balanced between programming and design. Below I have
+							websites, games and even interactive comics that you can look at. My porfolio is interactive, I want to give
+							you an idea of my skillset, but also something that you can enjoy as well.
+						</p>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main special">
+				<div class="container">
+					<!--span class="image fit primary"><img src="images/pic02.jpg" alt="" /></span-->
+					<div class="content">
+						<header class="major">
+							<h2>Projects</h2>
+						</header>
+						<p></p>
+						<ul class="icons-grid">
+							<li>
+								<a href = "#two" onclick = "openNav(0)" class="scrolly"><img  src="images/ca.png" class="tag img-fluid" /></a>
+								
+								<h3>Cross Analysis</h3>
+								<p>A number puzzle with some filler text also </p>
+							</li>
+							<li>
+								<a href = "#two" onclick = "openNav(1)" class="scrolly"><img  src="images/wormhole.png" class="tag img-fluid" /></a>
+								
+								<h3>Shields Up</h3>
+								<p>An arcade game with a spaceship, a classic</p>
+							</li>
+							<li>
+								<a href = "#two" onclick = "openNav(2)" class="scrolly"><img  src="images/giraffe.png" class="tag img-fluid" /></a>
+								
+								<h3>Giraffe Game</h3>
+								<p>Another arcade game, this time a platformer</p>
+							</li>
+							<li>
+								<a href = "#two" onclick = "openNav(3)" class="scrolly"><img  src="images/mild.png" class="tag img-fluid" /></a>
+								<h3>Mild Interaction</h3>
+								<p>A series of interactive webcomics</p>
+							</li>
+							<li>
+								<a href = "#two" onclick = "openNav(4)" class="scrolly"><img  src="images/trivia.png" class="tag img-fluid" /></a>
+								
+								<h3>Trivia Game</h3>
+								<p>A web application built with Ruby-On-Rails</p>
+							</li>
+							
+							<!--
+								<li>
+								<span class="icon solid major fa-coffee"></span>
+								<h3>Self-Storage</h3>
+							</li>
+							-->
+							
+						</ul>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main special">
+				<div class="container">
+					<!--span class="image fit primary"><img src="images/pic03.jpg" alt="" /></span-->
+					<div class="content">
+						<header class="major">
+							<h2>One more thing</h2>
+						</header>
+						<p>Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum.</p>
+					</div>
+					<a href="#footer" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+
+		
+	<!-- Overlay 1 -->
+	<div id="CAOverlay" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="stopCA()">&times;</a>
+	
+		<!-- Overlay content -->
+		
+			
+                <div class = "overlay-content">
+					<div class = row>
+						<div class = " col-3 off-2 game-container-portrait">
+							<div id="ca-container" class="unity-desktop  game-portrait hidden">
+								<canvas id="unity-canvas"></canvas>
+								<div id="unity-loading-bar">
+								  <div id="unity-logo"></div>
+								  <div id="unity-progress-bar-empty">
+									<div id="unity-progress-bar-full"></div>
+								  </div>
+								</div>
+							</div>
+							<button class = "playButton" onclick="startCA()">Play(Sound Warning)</button>
+						</div>
+						<div class = "col-4 off-1">
+							<p>
+								The goal of the game is to do some things and some other stuff. I originally made this for 
+								Goole Sheets, but rebuilt it in Unity to expand on the core gameplay.
+							</p>
+							
+						</div>
+					</div>
+					
+				</div>  
+	
+	</div>
+  <!-- Overlay 2 -->
+	<div id="ShieldsOverlay" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav(1)">&times;</a>
+	
+		<!-- Overlay content -->
+		
+			
+                <div class = "overlay-content">
+					<div class = row>
+						<div class = " col-6 off-3 game-container">
+							<div id="wormholeContainer" class ="game hidden"></div>
+							<button class = "playButton" onclick="startGame('worm')">Play(Sound Warning)</button>
+							
+						</div>
+						
+							
+						</div>
+						<div class = row>
+							<div class = "col-6 off-3">
+								<p>
+									The goal of the game is to do some things and some other stuff. I originally made this for 
+									Goole Sheets, but rebuilt it in Unity to expand on the core gameplay.
+								</p>
+						</div>
+					</div>
+					
+				</div>  
+	
+	</div>
+	<!-- Overlay 3 -->
+	<div id="GiraffeOverlay" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	
+		<!-- Overlay content -->
+		
+			
+                <div class = "overlay-content">
+					<div class = row>
+						<div class = " col-6 off-3 game-container">
+							<div id="giraffeContainer" class ="game hidden"></div>
+							<button class = "playButton" onclick="startGame('giraffe')">Play <br> (Sound Warning)</button>
+							
+						</div>
+						
+							
+						</div>
+						<div class = row>
+							<div class = "col-6 off-3">
+								<p>
+									The goal of the game is to do some things and some other stuff. I originally made this for 
+									Goole Sheets, but rebuilt it in Unity to expand on the core gameplay.
+								</p>
+						</div>
+					</div>
+					
+				</div>  
+	
+	</div>
+	<!-- Overlay 4 -->
+	<div id="MildOverlay" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	
+		<!-- Overlay content -->
+		
+			
+                <div class = "overlay-content">
+					<div class = row>
+						<div class = " col-6 off-3 game-container">
+							<div id="giraffeContainer" class ="game hidden"></div>
+							<button class = "playButton" >No Game Here</button>
+							
+						</div>
+						
+							
+						</div>
+						<div class = row>
+							<div class = "col-6 off-3">
+								<p>
+									I created these comics with some HTML, JS, and my subpar drawing skills. This is one that I think is pretty cool. You can find the
+									rest at <a href = 'http://mildinteraction.com'>mildinteraction.com</a>
+								</p>
+						</div>
+					</div>
+					
+				</div>  
+	
+	</div>
+  <!-- Overlay 5 -->
+	<div id="TriviaOverlay" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	
+		<!-- Overlay content -->
+		
+			
+                <div class = "overlay-content">
+					<div class = row>
+						<div class = " col-6 off-3 game-container">
+							<div id="giraffeContainer" class ="game hidden"></div>
+							<button class = "playButton" >No Game Here</button>
+							
+						</div>
+						
+							
+						</div>
+						<div class = row>
+							<div class = "col-6 off-3">
+								<p>
+									Built with Ruby-On-Rails and PostgreSQL, the purpose of the project was to learn a new stack. With a series of randomly
+									chosen, user submitted questions, I can't say its the most fun to play, but it shows that I can learn a new framework
+									when I need to.
+									Feel free to check it out <a href = 'https://glacial-forest-61386.herokuapp.com/'>here.</a>
+								</p>
+						</div>
+					</div>
+					
+				</div>  
+	
+	</div>
+	<!-- Overlay 5 -->
+	<div id="StorageOverlay" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	
+		<!-- Overlay content -->
+		
+			
+                <div class = "overlay-content">
+					<div class = row>
+						<div class = " col-6 off-3 game-container">
+							<div id="giraffeContainer" class ="game hidden"></div>
+							<button class = "playButton" >No Game Here</button>
+							
+						</div>
+						
+							
+						</div>
+						<div class = row>
+							<div class = "col-6 off-3">
+								<p>
+									These websites were designed for a client who owns multiple self-storage facilities across Florida. Built on Squarespace, as
+									a way to get up and running quickly while keeping costs down, plenty of customizations were made to get the site up to industry
+									standard, and implement custom APIs.
+									Feel free to check it out <a href = 'https://glacial-forest-61386.herokuapp.com/'>here.</a>
+								</p>
+						</div>
+					</div>
+					
+				</div>  
+	
+	</div>
+  
+		<!-- Footer -->
+			<section id="footer">
+
+
+				<!-- Unity Footer:should figure out how to remove entirely -->
+				<div id="unity-footer hidden">
+					<div id="unity-webgl-logo"></div>
+					<div id="unity-fullscreen-button"></div>
+					<div id="unity-build-title"></div>
+				  </div>
+
+
+				<div class="container">
+					<header class="major">
+						<h2>Get in touch</h2>
+					</header>
+					<form method="post" action="#">
+						<div class="row gtr-uniform">
+							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+							<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+							<div class="col-12">
+								<ul class="actions special">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands alt fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/overlay.js"></script>
+			<script src="assets/js/home.js"></script>
+			<script src="CAWeb/CAScript.js"></script>
+
+	</body>
+</html>

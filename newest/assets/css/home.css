@@ -1,0 +1,73 @@
+
+
+#pageTitle {
+  color: #FFFFFF;
+  font-size: 50px;
+}
+
+.hidden{
+  display:none;
+}
+.shown{
+  display:block;
+}
+
+/* 
+#fac3c3
+.card-body{
+  background-color: #EEEEEE;
+
+} */
+#pageBody {
+  min-height: 575px;
+}
+
+.modal{
+  border-radius:0px;
+}
+
+.game-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 30%;
+}
+.game{
+  position: absolute;
+  background-color: rgb(94, 0, 0);
+  width: 100%;
+  height:100%;
+}
+
+.playButton{
+  
+  position: absolute;
+  left:25px;
+  width: 100%;
+  height:100%;
+  
+  
+}
+
+
+.game-container-portrait{
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+  
+}
+.game-portrait{
+  position: absolute;
+  background-color: rgb(94, 0, 0);
+  width: 100%;
+  height:100%;
+}
+.gameCanvas{
+  width:100%;
+  height:100%;
+}
+.project-container{
+  position: relative;
+}
+
+
+

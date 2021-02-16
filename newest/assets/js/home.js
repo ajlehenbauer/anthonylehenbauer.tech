@@ -14,13 +14,8 @@ function startGame(game){
         $('.playButton').removeClass('shown');
         unityInstance = UnityLoader.instantiate("giraffeContainer", "GGBuild/UGGWebBuild.json", {onProgress: UnityProgress});
     }
-    else if(game =="worm"){
-        $('#wormholeContainer').removeClass('hidden');
-        $('#wormholeContainer').addClass('shown');
-        $('.playButton').addClass('hidden');
-        $('.playButton').removeClass('shown');
-        unityInstance = UnityLoader.instantiate("wormholeContainer", "WormholeBuild/web build.json", {onProgress: UnityProgress});
-    }
+    
+    
     else if(game =="ca"){
         $('#caContainer').removeClass('hidden');
         $('#caContainer').addClass('shown');

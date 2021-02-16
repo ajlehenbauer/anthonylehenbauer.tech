@@ -62,8 +62,8 @@
 							<h2>Who I am</h2>
 						</header>
 						<p>With a Digital Arts and Science Degree, my skills are balanced between programming and design. Below I have
-							websites, games and even interactive comics that you can look at. My porfolio is interactive, I want to give
-							you an idea of my skillset, but also something that you can enjoy as well.
+							websites, games and even interactive comics that you can look at. You can interact with pretty much everything here,
+							so I hope you find something you like!
 						</p>
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
@@ -77,14 +77,15 @@
 					<div class="content">
 						<header class="major">
 							<h2>Projects</h2>
+							
 						</header>
-						<p></p>
+						<p2>Disclaimer: <br>These games are not optimized for web, and may take a minute to load after clicking play.</p2>
 						<ul class="icons-grid">
 							<li>
 								<a href = "#two" onclick = "openNav(0)" class="scrolly"><img  src="images/ca.png" class="tag img-fluid" /></a>
 								
 								<h3>Cross Analysis</h3>
-								<p>A number puzzle with some filler text also </p>
+								<p>A number puzzle, both casual and challenging </p>
 							</li>
 							<li>
 								<a href = "#two" onclick = "openNav(1)" class="scrolly"><img  src="images/wormhole.png" class="tag img-fluid" /></a>
@@ -131,8 +132,28 @@
 						<header class="major">
 							<h2>One more thing</h2>
 						</header>
-						<p>Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum.</p>
-					</div>
+						<p>
+							If you'd simply like to see a resume, you can find it
+							<a href ='https://docs.google.com/document/d/19eL4Lj84sAPEtnwI09wKGgdAeH51bIoPIl3WLEHEFIs/edit?usp=sharing'>here.</a>
+						
+							<br>
+							<br>
+							<h4>If you want to know more about me:</h4>
+							
+							
+							I've been programming for about 7 years now, developing games for the last 3. I, ofcourse, play many games as well.
+							Pokemon and Halo are series that I grew up with and will always view fondly, but ever since I started Stardew Valley, indie games
+							take up most of my playtime now. Typically ones that are easy to pick up, and can play for shorter sessions that I inevitably end
+							up playing for hours at a time. Aside from games, I spent my 4 and a half years in college working in the AV industry. I gained a good
+							amount of knowledge surrounding AV production of live events, and I genuinely loved both being able to learn all of that equipment and 
+							work with so many different groups to make cool events happen.
+							<br>
+							
+							
+							
+						
+						</p>
+						</div>
 					<a href="#footer" class="goto-next scrolly">Next</a>
 				</div>
 			</section>
@@ -151,11 +172,11 @@
 					<div class = row>
 						<div class = " col-3 off-2 game-container-portrait">
 							<div id="ca-container" class="unity-desktop  game-portrait hidden">
-								<canvas id="unity-canvas"></canvas>
-								<div id="unity-loading-bar">
-								  <div id="unity-logo"></div>
-								  <div id="unity-progress-bar-empty">
-									<div id="unity-progress-bar-full"></div>
+								<canvas id="ca-canvas"></canvas>
+								<div id="ca-loading-bar">
+								  <div id="ca-logo"></div>
+								  <div id="ca-progress-bar-empty">
+									<div id="ca-progress-bar-full"></div>
 								  </div>
 								</div>
 							</div>
@@ -169,7 +190,9 @@
 								<br>
 								Random boards provide good casual play, the challenges give a chance to 
 								truly test your puzzle solving skills.
-								I originally made this for Goole Sheets, but rebuilt it in Unity to expand on 
+								I originally made this for 
+								<a href = 'https://docs.google.com/spreadsheets/d/1BpHbQywxs1BAbKZsTsUPOkBOT9n5GB4zs95HldZAJOQ/edit?usp=sharing'>Goole Sheets</a>, 
+								but rebuilt it in Unity to expand on 
 								the core gameplay. The game is still in development, but this is a pretty good prototype!
 							</p>
 							
@@ -191,8 +214,16 @@
                 <div class = "overlay-content">
 					<div class = row>
 						<div class = " col-6 off-3 game-container">
-							<div id="wormholeContainer" class ="game hidden"></div>
-							<button class = "playButton" onclick="startGame('worm')">Play(Sound Warning)</button>
+							<div id="shields-container" class="unity-desktop  game hidden">
+								<canvas id="shields-canvas"></canvas>
+								<div id="shields-loading-bar">
+								  <div id="shields-logo"></div>
+								  <div id="shields-progress-bar-empty">
+									<div id="shields-progress-bar-full"></div>
+								  </div>
+								</div>
+							</div>
+							<button class = "playButton" onclick="startShields()">Play(Sound Warning)</button>
 							
 						</div>
 						
@@ -200,9 +231,18 @@
 						</div>
 						<div class = row>
 							<div class = "col-6 off-3">
+								<p2>
+									Keyboard Controls
+									<br>
+									MOVE: Arrows or Z/C   SHIELD: Down Arrow or X
+									
+									<br>
+									<br>
+								</p2>
 								<p>
-									The goal of the game is to do some things and some other stuff. I originally made this for 
-									Goole Sheets, but rebuilt it in Unity to expand on the core gameplay.
+									As my first solo post-college project, I chose an arcade-stlye game because I knew it had an achievable scope
+									while still providing a full experience. While looking at the dozens of almost identical spaceship arcade mobile
+									games, I hoped to bring something new and interesting when designing the mechanics for Shields Up. 
 								</p>
 						</div>
 					</div>
@@ -231,9 +271,19 @@
 						</div>
 						<div class = row>
 							<div class = "col-6 off-3">
+								<p2>
+									Keyboard Controls<br> FIX: Z  CATCH: X   THROW: C  JUMP: Space  MOVE: Arrows
+									<br>Drop down with: Down+Jump
+									<br>
+									<br>
+								</p2>
 								<p>
-									The goal of the game is to do some things and some other stuff. I originally made this for 
-									Goole Sheets, but rebuilt it in Unity to expand on the core gameplay.
+									
+									Giraffe Game was designed for a weekend game jam with a small team. It was one of the first projects
+									I contributed to that I truly felt proud of. While it's implementation is simple, it was my first game
+									that I really enjoyed going back to play, and while some things feel a little unpolished, it felt like
+									a relatively completed experience.
+									
 								</p>
 						</div>
 					</div>
@@ -259,7 +309,9 @@
 						<div class = row>
 							<div class = "col-6 off-3">
 								<p>
-									I created these comics with some HTML, JS, and my subpar drawing skills. This is one that I think is pretty cool. You can find the
+									I created these comics with some HTML, JS, and my subpar drawing skills. In this one you can catch some fireflies(by clicking on them) 
+									and I think its pretty cool. 
+									You can find the
 									rest at <a href = 'http://mildinteraction.com'>mildinteraction.com</a>
 								</p>
 						</div>
@@ -279,11 +331,7 @@
 			
                 <div class = "overlay-content">
 					<div class = row>
-						<div class = " col-6 off-3 game-container">
-							<div id="giraffeContainer" class ="game hidden"></div>
-							<button class = "playButton" >No Game Here</button>
-							
-						</div>
+						
 						
 							
 						</div>
@@ -351,6 +399,8 @@
 					<header class="major">
 						<h2>Get in touch</h2>
 					</header>
+					<p>ajlehenbauer@gmail.com</p>
+					<!--
 					<form method="post" action="#">
 						<div class="row gtr-uniform">
 							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
@@ -363,8 +413,17 @@
 							</div>
 						</div>
 					</form>
+
+					-->
+					
+
+
+
 				</div>
+				
+				
 				<footer>
+					<!--
 					<ul class="icons">
 						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -372,8 +431,10 @@
 						<li><a href="#" class="icon brands alt fa-dribbble"><span class="label">Dribbble</span></a></li>
 						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
+					-->
+					
 					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
+						<li>Website: Anthony Lehenbauer(2021)</li><li>Layout: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 			</section>
@@ -389,6 +450,7 @@
 			<script src="assets/js/overlay.js"></script>
 			<script src="assets/js/home.js"></script>
 			<script src="CAWeb/CAScript.js"></script>
+			<script src="ShieldsUpWeb/ShieldScript.js"></script>
 			<script src="mildInteraction/scripts.js"></script>
 
 	</body>

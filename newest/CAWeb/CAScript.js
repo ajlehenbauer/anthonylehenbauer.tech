@@ -22,10 +22,10 @@ function startCA(){
       };
 
       var container = document.querySelector("#ca-container");
-      var canvas = document.querySelector("#unity-canvas");
-      var loadingBar = document.querySelector("#unity-loading-bar");
-      var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var canvas = document.querySelector("#ca-canvas");
+      var loadingBar = document.querySelector("#ca-loading-bar");
+      var progressBarFull = document.querySelector("#ca-progress-bar-full");
+      var fullscreenButton = document.querySelector("#ca-fullscreen-button");
       
       
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -46,9 +46,7 @@ function startCA(){
         }).then((unityInstance) => {
             myGame = unityInstance;
           loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
+          
         }).catch((message) => {
           alert(message);
         });
